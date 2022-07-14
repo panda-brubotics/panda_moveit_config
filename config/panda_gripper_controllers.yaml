@@ -1,8 +1,7 @@
- controller_list:
+controller_list:
   - name: position_joint_trajectory_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
-    default: true
     joints:
       - panda_joint1
       - panda_joint2
@@ -14,7 +13,6 @@
   - name: franka_gripper
     action_ns: gripper_action
     type: GripperCommand
-    default: true
     joints:
       - panda_finger_joint1
       - panda_finger_joint2
